@@ -9,7 +9,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   text-shadow:4px 4px 0 rgba(0,0,0,0.1);
   padding:10px;
@@ -30,55 +30,13 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-/*display:inline-flex;*/
-  display: flex;
-  border:10px solid black;
-/*viewport height = vh*/
-  min-height:100vh;
-/*main access is top to bottom with column*/
-  /*flex-direction: column;*/
-/*  is default, main access is left to right*/
-  /*flex-direction: row;*/
-  /*flex-direction: row-reverse;*/
-
-/*if have width assigned to flex item (.box here), will wrap*/
-  flex-wrap: wrap;
-/*default justify left: flex-start
-justify right: flex-end
-center: center
-space-between
-space-arround
-*/
-  /*justify-content: space-between;*/
-
-/*to align vertically, also mush have min-height, default is stretch
-also flex-start (top of container), and flex-end (bottom of container)
-baseline aligns to bottom of text content*/
-  /*align-items: flex-end;*/
-
-/*align content, only works when wrap (width on flex item .box, and flex-wrap set to wrap)*/
-  align-content: space-between;
+  display:flex;
 }
 
 .box {
-/*will try to work with width, or evenly distribute*/
-  /*width: 300px;*/
-  width: 33.33333%;
-  /*width: calc(33.3333% - 20px);
-  margin: 10px;*/
-/*makes all boxes even in size*/
-  /*flex:1;*/
+  flex:1;
 }
 
-/*move it to the end in number order
-everything is order 0, unless otherwise specified*/
-
-/*.box3{
-/*order: 2;
+.box2 {
+  flex:2;
 }
-.box7{
-  order: 1;
-}
-.box5{
-  order: -1;
-}*/
