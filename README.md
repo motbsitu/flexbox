@@ -13,3 +13,5 @@ Flexbox course from Wes Bos
   - In flex item. flex: 1 - all take equal amount, flex: 2 - takes up 2x amount, etc.
 
 - Grow, Shrink, basis
+
+- 
