@@ -1,5 +1,5 @@
-#Learn Flexbox
-Flexbox course from Wes Bos
+# Learn Flexbox
+### Flexbox course from Wes Bos
 - display: flex
 - flex direction - either row, column, row-reverse, or column-reverse.  Row is default
 - flex wrap - using width and margin on the items
@@ -14,4 +14,8 @@ Flexbox course from Wes Bos
 
 - Grow, Shrink, basis
 
-- 
+- Flex-basis and wrap together
+  - have to apply wrap for basis to work
+  - flex-grow, wrap, and basis only work on row they are on
+  - when have flex direction of column, to fill all space need min-height
+    - to wrap need height only (not min or max)
